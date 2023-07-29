@@ -1,0 +1,118 @@
+section.apresentacao {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 100px 0 150px;
+    position: relative;
+    overflow: hidden;
+}
+section.apresentacao div.texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 200px 0 650px 0;
+    z-index: 2;
+}
+section.apresentacao h1 {
+    font-family: var(--bold);
+    font-size: clamp(1.8rem, 1vw, 3.5rem);
+    color: var(--cor-preto);
+    max-width: 580px;
+    line-height: 1.2;
+}
+section.apresentacao p {
+    font-family: var(--regular);
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    line-height: 25px;
+    color: var(--cor-preto);
+    width: 100%;
+    max-width: 550px;
+    margin: 20px 0;
+}
+section.apresentacao h1 span {
+    color: var(--cor-roxo);
+}
+section.apresentacao a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: var(--bold);
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    color: var(--cor-branco);
+    text-decoration: none;
+    background: var(--cor-roxo);
+    border: solid 1.5px;
+    border-radius: 50px;
+    transition: all 0.3s;
+
+}
+
+section.apresentacao a:hover {
+    transform: scale(1.03);
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(5px);
+    color: var(--cor-roxo);
+}
+
+section.apresentacao img.trofeu {
+    max-width: 16px;
+    margin: 0 10px 0 0;
+}
+
+section.apresentacao img.principal {
+    position: absolute;
+    bottom: 400px;
+    right: 100px;
+    width: 100%;
+    max-width: 750px;
+    z-index: 1;
+}
+section.apresentacao svg{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0;
+}
+
+/* Responsivo */
+@media screen and (max-width: 1400px) {
+    section.apresentacao {
+        padding: 0 20px 0 20px;
+    }
+    section.apresentacao div.texto {
+        align-items: center;
+        padding: 130px 0px 600px 0px;
+    }
+    section.apresentacao h1 {
+        text-align: center;
+    }
+    section.apresentacao p {
+        text-align: center;
+        font-family: var(--regular);
+        font-size: 1rem;
+        line-height: 25px;
+        color: var(--cor-preto);
+        width: 100%;
+        max-width: 550px;
+        margin: 20px 0;
+    }
+    
+    section.apresentacao img.principal {
+        position: absolute;
+        bottom: 0%;
+        right: 0px;
+        width: 100%;
+        max-width: 600px;
+        z-index: 1;
+    }
+    section.apresentacao svg{
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        left: 0;
+    } 
+}
